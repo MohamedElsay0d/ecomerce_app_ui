@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Splashscreen(),
+      home: const HomePage(),
       routes: {
         "onboardingscreen": (context) => const Onboardingscreen(),
         "Authenticationscreen": (context) => const Authenticationscreen(),
