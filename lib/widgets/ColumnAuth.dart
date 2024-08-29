@@ -1,6 +1,8 @@
 import 'package:ecomerce_app/widgets/CustomButton.dart';
 import 'package:flutter/material.dart';
 
+import '../views/HomePage.dart';
+
 class ColumnAuth extends StatelessWidget {
   const ColumnAuth({
     super.key,
@@ -18,6 +20,7 @@ class ColumnAuth extends StatelessWidget {
           style: const TextStyle(fontSize: 18.0),
           decoration: InputDecoration(
             hintText: 'What is your firstname?',
+            labelText: "Name",
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10.0),
             ),
@@ -28,7 +31,12 @@ class ColumnAuth extends StatelessWidget {
             buttonText: 'Start Ordering',
             onPressed: () {
               print("firstnameController: ${firstnameController.text}");
-              Navigator.pushReplacementNamed(context, "HomeScreen");
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => HomePage(
+                            name: firstnameController.text,
+                          )));
             }),
         const SizedBox(height: 120),
       ],

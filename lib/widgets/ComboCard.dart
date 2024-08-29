@@ -10,32 +10,34 @@ class ComboCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Image.asset(imagePath, height: 100, width: 100, fit: BoxFit.cover),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Text(title,
-                style: const TextStyle(fontWeight: FontWeight.bold)),
-          ),
-          Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  Text(price, style: const TextStyle(color: Colors.orange)),
-                  const VerticalDivider(
-                    width: 30,
-                  ),
-                  IconButton(
-                      onPressed: () {},
-                      icon: const Icon(
-                        Icons.add,
-                        color: Colors.orange,
-                      ))
-                ],
-              )),
-        ],
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset(imagePath, height: 100, width: 100, fit: BoxFit.cover),
+            Padding(
+              padding: const EdgeInsets.all(5.0),
+              child: Text(title,
+                  style: const TextStyle(fontWeight: FontWeight.bold)),
+            ),
+            Padding(
+                padding: const EdgeInsets.all(3.0),
+                child: Row(
+                  children: [
+                    Text(price, style: const TextStyle(color: Colors.orange)),
+                    const VerticalDivider(
+                      width: 30,
+                    ),
+                    IconButton(
+                        onPressed: () {},
+                        icon: const Icon(
+                          Icons.add,
+                          color: Colors.orange,
+                        ))
+                  ],
+                )),
+          ],
+        ),
       ),
     );
   }
