@@ -1,5 +1,4 @@
 import 'package:ecomerce_app/views/AuthenticationScreen.dart';
-import 'package:ecomerce_app/views/HomePage.dart';
 import 'package:flutter/material.dart';
 
 import 'views/OnboardingScreen.dart';
