@@ -17,6 +17,7 @@ class HomepageContent extends StatelessWidget {
         children: [
           Text(
             'Hello $name, What fruit salad\ncombo do you want today?',
+            textAlign: TextAlign.center,
             style: const TextStyle(
                 color: Colors.black, fontWeight: FontWeight.bold, fontSize: 18),
           ),
@@ -64,14 +65,13 @@ class HomepageContent extends StatelessWidget {
               Tab(text: 'Top'),
             ],
           ),
-          // const SizedBox(height: 10),
           const Expanded(
             child: TabBarView(
               children: [
                 HottestTab(),
-                Center(child: Text('Popular Content')),
-                Center(child: Text('New Combo Content')),
-                Center(child: Text('Top Content')),
+                HottestTab(),
+                HottestTab(),
+                HottestTab(),
               ],
             ),
           ),

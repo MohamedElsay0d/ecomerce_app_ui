@@ -5,7 +5,7 @@ class ComboCard extends StatelessWidget {
   final String price;
   final String imagePath;
 
-  ComboCard(this.title, this.price, this.imagePath);
+  const ComboCard(this.title, this.price, this.imagePath, {super.key});
 
   @override
   Widget build(BuildContext context) {

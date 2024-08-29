@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
           backgroundColor: Colors.white,
           elevation: 0,
           leading: IconButton(
-            icon: const Icon(Icons.menu, color: Colors.orange),
+            icon: const Icon(Icons.menu, color: Colors.black),
             onPressed: () {
               // Handle menu button press
             },

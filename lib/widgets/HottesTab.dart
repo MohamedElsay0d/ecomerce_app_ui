@@ -11,11 +11,13 @@ class HottestTab extends StatelessWidget {
         padding: const EdgeInsets.all(6.0),
         child: ListView(
           scrollDirection: Axis.horizontal,
-          children: [
-            ComboCard('Berry mango combo', '  ₦ 8,000', 'assets/fruits2.png'),
-            ComboCard('Berry mango combo', '  ₦ 8,000', 'assets/fruits.png'),
-            ComboCard('Berry mango combo', '  ₦ 8,000', 'assets/fruits2.png'),
-            ComboCard('Berry mango combo', '  ₦ 8,000', 'assets/fruits.png'),
+          children: const [
+            ComboCard('Quinoa fruit salad', '  ₦ 8,000',
+                'assets/Quinoa_fruit_salad.png'),
+            ComboCard('Tropical fruit salad', '  ₦ 8,000',
+                'assets/Tropical_fruit_salad.png'),
+            ComboCard('melon fruit salad', '  ₦ 8,000',
+                'assets/melon_fruit_salad.png'),
           ],
         ));
   }
